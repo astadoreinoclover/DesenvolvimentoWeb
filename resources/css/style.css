@@ -13,3 +13,124 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+header {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    width: 90vw;
+  }
+  
+  /* Estilos para o logo */
+  .logo {
+    width: 50px;
+  }
+  
+  /* Estilos para a barra de pesquisa */
+  .search {
+    flex-grow: 1;
+    margin-left: 20px;
+    max-width: 35vw;
+    height: 30px;
+  }
+
+  .search input {
+    width: 90%;
+    height: 30px;
+    padding: 0px 5px;
+    border: transparent;
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+  }
+
+  .search input:focus {
+    outline: none;
+  }
+
+  .search button {
+    padding: 4px;
+    height: 30px;
+    border: transparent;
+    background-color: #fff;
+    border-radius:  0 4px 4px 0;
+    margin-left: -4px;
+  }
+
+  .icon {
+    display: flex;
+  }
+  
+  /* Estilos para o ícone de usuário */
+  .user {
+    margin-right: 27px;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para o ícone de carrinho */
+  .cart {
+    font-size: 27px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para o menu dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    font-size: 22px;
+    height: 100px;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and () {
+    
+}
