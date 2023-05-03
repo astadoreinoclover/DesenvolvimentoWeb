@@ -24,39 +24,37 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .container {
+.container {
     width: 90vw;
-  }
+}
   
-  /* Estilos para o logo */
-  .logo {
+.logo {
     width: 50px;
-  }
+}
   
-  /* Estilos para a barra de pesquisa */
-  .search {
+.search {
     flex-grow: 1;
     margin-left: 20px;
     max-width: 35vw;
     height: 30px;
-  }
+}
 
-  .search input {
+.search input {
     width: 90%;
     height: 30px;
     padding: 0px 5px;
     border: transparent;
     border-radius: 4px 0 0 4px;
     margin-right: 0;
-  }
+}
 
-  .search input:focus {
+.search input:focus {
     outline: none;
   }
 
-  .search button {
+.search button {
     padding: 4px;
     height: 30px;
     border: transparent;
@@ -65,30 +63,27 @@ header {
     margin-left: -4px;
   }
 
-  .icon {
+.icon {
     display: flex;
-  }
+}
   
-  /* Estilos para o ícone de usuário */
-  .user {
+.user {
     margin-right: 27px;
     font-size: 27px;
     cursor: pointer;
-  }
+}
   
-  /* Estilos para o ícone de carrinho */
-  .cart {
+.cart {
     font-size: 27px;
     cursor: pointer;
-  }
+}
   
-  /* Estilos para o menu dropdown */
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #eee;
@@ -98,39 +93,36 @@ header {
     padding: 10px;
     font-size: 22px;
     height: 100px;
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     text-decoration: none;
     font-weight: 400;
-  }
+}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and () {
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
