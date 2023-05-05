@@ -29,9 +29,26 @@ header {
 .container {
     width: 90vw;
 }
+
+.menu-burguer {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #999;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-burguer .linha {
+    width: 90%;
+    height: 10%;
+    background-color: #111;
+}
   
 .logo {
-    width: 50px;
+    width: 30px;
 }
   
 .search {
@@ -52,7 +69,7 @@ header {
 
 .search input:focus {
     outline: none;
-  }
+}
 
 .search button {
     padding: 4px;
@@ -61,7 +78,7 @@ header {
     background-color: #fff;
     border-radius:  0 4px 4px 0;
     margin-left: -4px;
-  }
+}
 
 .icon {
     display: flex;
@@ -107,22 +124,202 @@ header {
 }
 
 
+/* SUB-MENU */
 
 
 
+nav {
+    background: #ccc;
+    padding: 5px;
+    border-top: 1px solid #999;
+}
+  
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+  
+.menu li {
+    flex: 1;
+    text-align: center;
+}
+  
+.menu li a {
+    color: #777;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+  
+.menu li a:hover {
+    background: #ddd;
+    color: #111;
+}
 
+/* Banner */
 
+.banner {
+    background-image: url('./img/banner.jpg');
+    background-size:cover;
+    background-position: top;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    align-items: end;
+}
 
+.banner:hover .banner-text {
+    display: block;
+}
+  
+.banner-text {
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+.banner-text h1 {
+    font-size: 4vw;
+    margin: 0;
+}
+  
+.banner-text p {
+    font-size: 2vw;
+    margin: 20px 0;
+}
+  
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f0;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0.9;
+}
 
+.button:hover {
+    opacity: 1;
+}
 
+@media screen and (max-width:800px) and (min-width:560px) {
+    .search input {
+        width: 85%;
+        height: 30px;
+        padding: 0px 5px;
+        border: transparent;
+        border-radius: 4px 0 0 4px;
+        margin-right: 0;
+    }
+}
 
+@media screen and (max-width:559px) {
+    .search input {
+        width: 75%;
+        height: 30px;
+        padding: 0px 5px;
+        border: transparent;
+        border-radius: 4px 0 0 4px;
+        margin-right: 0;
+    }
+}
 
+@media screen and (max-width:520px) {
+    .search {
+        flex-grow: 1;
+        max-width: 25vw;
+        height: 30px;
+        margin-left: -5px;
+    }
 
+    .search input {
+        width: 75%;
+        height: 30px;
+        padding: 0px 5px;
+        border: transparent;
+        border-radius: 4px 0 0 4px;
+        margin-right: 0;
+    }
 
+    .menu-burguer {
+        display: flex;
+    }
 
+    .user {
+        margin-right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+      
+    .cart {
+        font-size: 25px;
+        cursor: pointer;
+    }
 
+    .none {
+        display: none;
+    }
 
+    .flex {
+        display: flex;
+    }
 
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
 
+    .menu li a {
+        color: #777;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 300;
+    }
+}
 
+@media screen and (max-width:445px) {
+    .search input {
+        width: 55%;
+        height: 30px;
+        padding: 0px 5px;
+        border: transparent;
+        border-radius: 4px 0 0 4px;
+        margin-right: 0;
+    }
 
+    .menu li a {
+        color: #777;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 5vw;
+    }
+
+    .banner-text h1 {
+        margin-bottom: 5px;
+        font-size: 7vw;
+    }
+
+    .banner-text p {
+        display: none;
+    }
+}
