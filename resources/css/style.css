@@ -213,6 +213,74 @@ nav {
     opacity: 1;
 }
 
+
+/* CINEMA */
+
+
+.cinema {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+}
+  
+.filmes {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2VW;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.aluguel {
+    display: block;
+    text-align: center;
+    font-size: 2VW;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.champions {
+    background-color: #f1c40f;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: space-around;
+}
+
+.champions p {
+    width: 80%;
+    text-align: center;
+}
+
+.champions:after {
+    content: '';
+    background-image: url(./img/champions.png);
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 5px;
+}
+
+
+
+
 @media screen and (max-width:800px) and (min-width:560px) {
     .search input {
         width: 85%;
