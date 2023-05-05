@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: #fff;
+    background-color: #ccc;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif; 
     font-weight: 300;
@@ -28,6 +28,7 @@ header {
 
 .container {
     width: 90vw;
+    margin: auto;
 }
 
 .menu-burguer {
@@ -214,72 +215,99 @@ nav {
 }
 
 
+
+
 /* CINEMA */
 
-
-.cinema {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 20px;
+.emCartaz-title {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    font-weight: 800;
 }
-  
-.filmes {
-    grid-column: 1/-1;
+
+.listaCartaz {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filme {
+    width: 300px;
+    border: 1px solid #555;
+    background-color: #999;
+    border-radius: 10px;
+    padding: 20px 0 60px 0;
+}
+
+.filme .imagem {
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
-    font-size: 2VW;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000;
-    position: relative;
 }
 
-.aluguel {
-    display: block;
-    text-align: center;
-    font-size: 2VW;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000;
-    position: relative;
+.filme img {
+    width: 250px;
 }
 
-.champions {
-    background-color: #f1c40f;
+.filme-1:after {
+    content: '16';
+    position: relative;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f00;
+    margin-top: 30px;
+    top: 25px;
+    font-weight: bold;
     color: #fff;
-    font-size: 1.2em;
+}
+
+.filme-2:after {
+    content: '16';
+    position: relative;
+    margin-left: 25px;
     padding: 10px;
     border-radius: 10px;
-    display: flex;
-    align-items: space-around;
+    background-color: #f00;
+    margin-top: 30px;
+    top: 25px;
+    font-weight: bold;
+    color: #fff;
 }
 
-.champions p {
-    width: 80%;
-    text-align: center;
-}
-
-.champions:after {
-    content: '';
-    background-image: url(./img/champions.png);
-    width: 5vw;
-    height: 5vw;
-    background-repeat: no-repeat;
-    background-size: cover;
+.filme-3:after {
+    content: '16';
     position: relative;
-    right: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f00;
+    margin-top: 30px;
+    top: 25px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
 
+
+
+/* features */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width:1050px) {
+    .filme-3{
+        display: none;
+    }
+}
 
 @media screen and (max-width:800px) and (min-width:560px) {
     .search input {
@@ -289,6 +317,12 @@ nav {
         border: transparent;
         border-radius: 4px 0 0 4px;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .filme-2{
+        display: none;
     }
 }
 

@@ -7,3 +7,4 @@ function abrirMenu() {
         document.querySelector('nav').classList.add('none');
     }
 }
+
