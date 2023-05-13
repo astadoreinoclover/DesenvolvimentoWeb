@@ -29,6 +29,7 @@ header {
 .container {
     width: 90vw;
     margin: auto;
+    max-width: 1200px;
 }
 
 .menu-burguer {
@@ -175,7 +176,7 @@ nav {
     height: 41vw;
 }
 
-.none {
+.b-none {
     display: none;
 }
 
@@ -260,7 +261,7 @@ nav {
 
 .controls {
     position: absolute;
-    top: 76px;
+    top: 130px;
     height: 42vw;
     width: 95%;
     display: flex;
@@ -287,6 +288,10 @@ nav {
 
 /* CINEMA */
 
+.emCartaz, .emBreve {
+    overflow-x: hidden;
+}
+
 .emCartaz-title {
     font-size: 4vw;
     padding: 2vw 4vw;
@@ -300,16 +305,18 @@ nav {
 
 .listaCartaz {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 1920px;
 }
 
 .filme {
+    cursor: pointer;
     width: 300px;
     border: 1px solid #555;
     background-color: #999;
     border-radius: 10px;
     padding: 20px 0 60px 0;
+    margin-right: 20px;
+    z-index: 998;
 }
 
 .filme .imagem {
@@ -349,7 +356,7 @@ nav {
 }
 
 .filme-3:after {
-    content: '16';
+    content: '18';
     position: relative;
     margin-left: 25px;
     padding: 10px;
@@ -361,7 +368,68 @@ nav {
     color: #fff;
 }
 
+.filme-5:after {
+    content: 'L';
+    position: relative;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f00;
+    margin-top: 30px;
+    top: 25px;
+    font-weight: bold;
+    color: #fff;
+}
 
+.bot {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 458px;
+    justify-content: space-between;
+}
+
+.btn-prev {
+    margin-left: -10px;
+}
+
+.btn-next {
+    margin-right: -10px;
+}
+
+.btn-next, .btn-prev {
+    height: 50px;
+    font-size: 30px;
+    background-color: #111;
+    color:#eee;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.btn-prev:hover {
+    background-color: #555;
+}
+
+.btn-next:hover {
+    background-color: #555;
+}
+
+
+
+.emBreve {
+    margin-top: 70px;
+}
+
+.emBreve-title {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    font-weight: 800;
+    background-color: rgb(48, 83, 147);
+    color: #eee;
+    width: 55vw;
+    margin: 2vw;
+    border-radius: 15px;
+}
 
 
 
@@ -394,8 +462,17 @@ nav {
 }
 
 @media screen and (max-width:710px) {
-    .filme-2{
-        display: none;
+    .filme {
+        width: 200px;
+    }
+
+    .filme img {
+        width: 160px;
+    }
+
+    .bot {
+        position: absolute;
+        height: 70%;
     }
 }
 
@@ -425,6 +502,14 @@ nav {
         border: transparent;
         border-radius: 4px 0 0 4px;
         margin-right: 0;
+    }
+
+    .controls {
+        top:76px
+    }
+
+    .mb {
+        top: 190px;
     }
 
     .menu-burguer {
