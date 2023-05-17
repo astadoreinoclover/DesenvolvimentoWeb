@@ -484,28 +484,123 @@ nav {
 .imgs-galeria {
     display: grid;
     grid-template-columns: repeat(4, 4fr);
-    grid-gap: 0.5vw;
+    grid-gap: 1vw;
 }
 
 
 .img-galeria img {
-    width: 17vw;
+    width: 18vw;
     height: 9vw;
     opacity: 0.5;
     cursor: pointer;
     transition: transform 0.5s;
+    transform: scale(1.06);
+    margin-bottom: 10px;
 }
 
 .img-galeria img:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 
+/* APP */
 
-@media screen and (max-width:1050px) {
-    .filme-3{
-        display: none;
+.app {
+    background-color: #ddd;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 56px 11px #999;
+}
+
+.app-title {
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.app-body {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-bottom: 30px;
+}
+
+.app-img img {
+    width: 45vw;
+}
+
+.app-pacos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.app-paco {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.num-paco {
+    padding: 5px;
+    border: 1px solid #111;
+    color: #111;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.text-paco {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: calc(100% - 50px);
+}
+
+.app-logo {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.app-logo img {
+    width: 150px;
+    height: 45px;
+}
+
+/* Avaliação */
+
+.avalia {
+    background-image: url(./img/sala2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avalia .ttt {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.avalia-title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #bbb;
+}
+
+@media screen and (max-width:1024px) {
+    .img-galeria img {
+        width: 21vw;
+        height: 12vw;
     }
 }
 
@@ -690,3 +785,39 @@ nav {
         display: none;
     }
 }
+
+@media screen and (max-width: 670px) {
+    .app-logo img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .app-title {
+        text-align: center;
+        padding: 20px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .app-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-img {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .app-img img {
+        width: 80vw;
+    }
+
+    .app-logo img {
+        width: 150px;
+        height: 45px;
+    }
+}
+
