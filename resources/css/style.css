@@ -389,7 +389,7 @@ nav {
     position: absolute;
     display: flex;
     align-items: center;
-    height: 458px;
+    margin-top: 200px;
     justify-content: space-between;
 }
 
@@ -654,7 +654,7 @@ nav {
 
     .bot {
         position: absolute;
-        height: 325px;
+        margin-top: 150px;
     }
 }
 
