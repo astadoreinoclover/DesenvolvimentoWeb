@@ -373,10 +373,10 @@ nav {
 }
 
 .filme-5:after {
-    content: '18';
+    content: ' L ';
     position: relative;
     margin-left: 25px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     background-color: #f00;
     margin-top: 30px;
@@ -389,12 +389,17 @@ nav {
     position: absolute;
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    margin-top: -260px;
     justify-content: space-between;
 }
 
 .btn-prev {
     margin-left: -10px;
+}
+
+.btn-none {
+    opacity: 0;
+    cursor: none;
 }
 
 .btn-next {
@@ -654,7 +659,7 @@ nav {
 
     .bot {
         position: absolute;
-        margin-top: 150px;
+        margin-top: -170px;
     }
 }
 

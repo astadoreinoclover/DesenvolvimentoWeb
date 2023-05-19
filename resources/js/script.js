@@ -48,3 +48,105 @@ function anterior() {
 
 
 setInterval(proximo, 6000);
+
+let margin = [0]
+
+function mais() {
+    if(window.innerWidth >=1024) {
+        if(margin[0] < 740) {
+            let nova = margin[0]+320;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >640) {
+        document.querySelector('.btn-mais').classList.add('btn-none');
+        } else if(margin[0] > 0) {
+            document.querySelector('.btn-menos').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 710) {
+        if(margin[0] < 1280) {
+            let nova = margin[0]+320;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >1200) {
+        document.querySelector('.btn-mais').classList.add('btn-none');
+        } else if(margin[0] > 0) {
+            document.querySelector('.btn-menos').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 425) {
+        if(margin[0] < 1030) {
+            let nova = margin[0]+220;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >1030) {
+        document.querySelector('.btn-mais').classList.add('btn-none');
+        } else if(margin[0] > 0) {
+            document.querySelector('.btn-menos').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 20) {
+        if(margin[0] < 1030) {
+            let nova = margin[0]+220;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >1030) {
+        document.querySelector('.btn-mais').classList.add('btn-none');
+        } else if(margin[0] > 0) {
+            document.querySelector('.btn-menos').classList.remove('btn-none');
+        }
+    }
+
+    document.querySelector('.listaCartaz').style.transition = 'margin-left 2s';
+    document.querySelector('.listaCartaz').style.marginLeft = `-${margin[0]}px`;
+    console.log(margin[0]);
+}
+
+function menos() {
+    if(window.innerWidth >= 710) {
+        if(margin[0] >0) {
+            let nova = margin[0]-320;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0]  > 0) {
+            document.querySelector('.btn-mais').classList.remove('btn-none');
+        } else if (margin[0] === 0) {
+            document.querySelector('.btn-menos').classList.add('btn-none');
+        }
+    } else if(window.innerWidth >= 425) {
+        if(margin[0] > 0) {
+            let nova = margin[0]-220;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >0) {
+        document.querySelector('.btn-mais').classList.remove('btn-none');
+        } else if(margin[0] === 0) {
+            document.querySelector('.btn-menos').classList.add('btn-none');
+        }
+    } else if(window.innerWidth >= 20) {
+        if(margin[0] > 0) {
+            let nova = margin[0]-220;
+            margin.push(nova)
+            margin.shift();
+        } 
+        
+        if(margin[0] >0) {
+        document.querySelector('.btn-mais').classList.remove('btn-none');
+        } else if(margin[0] === 0) {
+            document.querySelector('.btn-menos').classList.add('btn-none');
+        }
+    }
+
+    document.querySelector('.listaCartaz').style.transition = 'margin-left 2s';
+    document.querySelector('.listaCartaz').style.marginLeft = `-${margin[0]}px`;
+    console.log(margin[0]);
+}
