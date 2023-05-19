@@ -150,3 +150,109 @@ function menos() {
     document.querySelector('.listaCartaz').style.marginLeft = `-${margin[0]}px`;
     console.log(margin[0]);
 }
+
+
+
+
+
+let marginE = [0]
+
+function maisE() {
+    if(window.innerWidth >=1024) {
+        if(marginE[0] < 740) {
+            let nova = marginE[0]+320;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >640) {
+        document.querySelector('.btn-maisE').classList.add('btn-none');
+        } else if(marginE[0] > 0) {
+            document.querySelector('.btn-menosE').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 710) {
+        if(marginE[0] < 1280) {
+            let nova = marginE[0]+320;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >1200) {
+        document.querySelector('.btn-maisE').classList.add('btn-none');
+        } else if(marginE[0] > 0) {
+            document.querySelector('.btn-menosE').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 425) {
+        if(marginE[0] < 1030) {
+            let nova = marginE[0]+220;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >1030) {
+        document.querySelector('.btn-maisE').classList.add('btn-none');
+        } else if(marginE[0] > 0) {
+            document.querySelector('.btn-menosE').classList.remove('btn-none');
+        }
+    } else if(window.innerWidth >= 20) {
+        if(marginE[0] < 1030) {
+            let nova = marginE[0]+220;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >1030) {
+        document.querySelector('.btn-maisE').classList.add('btn-none');
+        } else if(marginE[0] > 0) {
+            document.querySelector('.btn-menosE').classList.remove('btn-none');
+        }
+    }
+
+    document.querySelector('.listaCartazE').style.transition = 'margin-left 2s';
+    document.querySelector('.listaCartazE').style.marginLeft = `-${marginE[0]}px`;
+    console.log(marginE[0]);
+}
+
+function menosE() {
+    if(window.innerWidth >= 710) {
+        if(marginE[0] >0) {
+            let nova = marginE[0]-320;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0]  > 0) {
+            document.querySelector('.btn-maisE').classList.remove('btn-none');
+        } else if (marginE[0] === 0) {
+            document.querySelector('.btn-menosE').classList.add('btn-none');
+        }
+    } else if(window.innerWidth >= 425) {
+        if(marginE[0] > 0) {
+            let nova = marginE[0]-220;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >0) {
+        document.querySelector('.btn-maisE').classList.remove('btn-none');
+        } else if(marginE[0] === 0) {
+            document.querySelector('.btn-menosE').classList.add('btn-none');
+        }
+    } else if(window.innerWidth >= 20) {
+        if(marginE[0] > 0) {
+            let nova = marginE[0]-220;
+            marginE.push(nova)
+            marginE.shift();
+        } 
+        
+        if(marginE[0] >0) {
+        document.querySelector('.btn-maisE').classList.remove('btn-none');
+        } else if(marginE[0] === 0) {
+            document.querySelector('.btn-menosE').classList.add('btn-none');
+        }
+    }
+
+    document.querySelector('.listaCartazE').style.transition = 'margin-left 2s';
+    document.querySelector('.listaCartazE').style.marginLeft = `-${marginE[0]}px`;
+    console.log(marginE[0]);
+}
