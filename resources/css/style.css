@@ -11,6 +11,7 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -131,8 +132,6 @@ header {
 
 
 /* SUB-MENU */
-
-
 
 nav {
     background: #ccc;
@@ -499,7 +498,7 @@ nav {
     opacity: 0.5;
     cursor: pointer;
     transition: transform 0.5s;
-    transform: scale(1.06);
+    transform: scale(1);
     margin-bottom: 10px;
 }
 
@@ -576,6 +575,7 @@ nav {
 .app-logo img {
     width: 150px;
     height: 45px;
+    cursor: pointer;
 }
 
 /* Avaliação */
@@ -600,6 +600,67 @@ nav {
     text-transform: uppercase;
     font-weight: 400;
     color: #bbb;
+}
+
+.avalia-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-top: 100px;
+}
+
+
+
+.avalia-text {
+    text-align: center;
+    margin-bottom: 100px;
+    color:#eee;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 30px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 50px;
+}
+
+.fale-conosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fale-conosco .item {
+    margin-top: 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.parceiros .item {
+    margin-top: 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+footer h2 {
+    font-size: 4vw;
 }
 
 @media screen and (max-width:1024px) {
@@ -633,11 +694,24 @@ nav {
         min-height: 300px;
         min-width: 400px;
     }
+    
+    .text-2 {
+        grid-column: span 2;
+        justify-self: center;
+        max-width: 400px;
+    }
 
     .imgs-galeria {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         grid-gap: 0.5vw;
+    }
+
+    .avalia-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: 50px;
+        text-align: center;
     }
     
     .img-galeria img {
@@ -685,13 +759,38 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0.5vw;
     }
+
+    .avalia-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+    }
+
+    .avalia-title {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #bbb;
+    }
     
+
     .img-galeria img {
         width: 90vw;
         height: 45vw;
         opacity: 0.5;
         cursor: pointer;
     }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer h2 {
+        font-size: 7vw;
+    } 
 }
 
 @media screen and (max-width:520px) {
@@ -723,6 +822,10 @@ nav {
         display: flex;
     }
 
+    .b-none {
+        display: block;
+    }
+
     .user {
         margin-right: 20px;
         font-size: 25px;
@@ -740,6 +843,10 @@ nav {
 
     .flex {
         display: flex;
+    }
+
+    .gale {
+        display: none;
     }
 
     .menu {
@@ -825,4 +932,3 @@ nav {
         height: 45px;
     }
 }
-

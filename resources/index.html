@@ -112,8 +112,7 @@
     </div>
     
     <!-- CINEMA -->
-    <main>
-        <div id="emcartaz" class="emCartaz container">
+        <main id="emcartaz" class="emCartaz container">
             <div class="emCartaz-title">Filmes em Cartaz</div>
             <div class="listaCartaz">
                     <div class="filme filme-1">
@@ -151,11 +150,10 @@
                 <button onclick="menos()" class="btn-prev btn-none btn-menos">&lt;</button>
                 <button onclick="mais()" class="btn-next btn-mais">&gt;</button>
             </div>
-        </div>
-    </main>
+        </main>
         <hr class="linha container"/>
 
-        <div class="emBreve container">
+        <section class="emBreve container">
             <div class="emBreve-title">Proximos Lançamentos</div>
             <div class="listaCartazE">
                 <div class="filme filme-1">
@@ -193,11 +191,11 @@
                     <button onclick="menosE()" class="btn-prev btn-none btn-menosE">&lt;</button>
                     <button onclick="maisE()" class="btn-next btn-maisE">&gt;</button>
                 </div>
-        </div>
+        </section>
 
         <hr class="linha container"/>
 
-    <div class="container">
+    <section class="container">
         <div class="features">
             <div class="hora">
                 <img class="imagem-grid" src="./img/clock.svg"/>
@@ -213,27 +211,28 @@
                 <h3>Reserve seu ingresso</h3>
             </div>
         </div>
-    </div>
+    </section>
 
     <hr class="linha container"/>
 
-    <div class="galeria container">
-        <h1>Galeria:</h1>
+    <section class="galeria container">
+        <h1>Galeria: </h1>
         <div class="imgs-galeria">
             <div class="img-galeria"><img src="./img/sala.jpg"/></div>
             <div class="img-galeria"><img src="./img/sala2.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
-            <div class="img-galeria"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <div class="img-galeria gale"><img src="./img/sala.jpg"/></div>
+            <a href="#" class="b-none">vermais...</a>
         </div>
-    </div>
+    </section>
 
     <hr class="linha container"/>
 
-    <div class="container app">
+    <section class="container app">
         <div class="app-title">Esperando o que? Basatam 3 passos</div>
         <div class="app-body">
             <div class="app-img"><img src="./img/hero-img.png"/></div>
@@ -257,15 +256,52 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <hr class="linha container"/>
 
-    <div class="avalia">
+    <section class="avalia">
         <div class="ttt">
             <div class="avalia-title">Sua diversão nossa responsabilidade</div>
+            <div class="avalia-grid container">
+                <div class="avalia-text">
+                    <h3>Gerente</h3><br>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum bibendum 
+                    augue, vel hendrerit ex maximus eu. Maecenas ultrices ultrices enim a mattis. Nam dolor 
+                    ligula, ultricies vitae nisl vitae."
+                </div>
+                <div class="avalia-text">
+                    <h3>Cliente</h3><br>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum bibendum 
+                    augue, vel hendrerit ex maximus eu. Maecenas ultrices ultrices enim a mattis. Nam dolor 
+                    ligula, ultricies vitae nisl vitae."
+                </div>
+                <div class="avalia-text text-2">
+                    <h3>Cliente</h3><br>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum bibendum 
+                    augue, vel hendrerit ex maximus eu. Maecenas ultrices ultrices enim a mattis. Nam dolor 
+                    ligula, ultricies vitae nisl vitae."
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <div class="footer container">
+            <div class="fale-conosco">
+                <h2 class="item">Fale Conosco</h2>
+                <div class="item">Facebook</div>
+                <div class="item">Twiter</div>
+                <div class="item">Instagram</div>
+            </div>
+            <div class="parceiros">
+                <h2 class="item">Parceiros</h2>
+                <div class="item">PARCEIRO 1</div>
+                <div class="item">PARCEIRO 2</div>
+                <div class="item">PARCEIRO 3</div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="./js/script.js"></script>
